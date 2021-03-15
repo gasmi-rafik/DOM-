@@ -63,11 +63,10 @@ plus[i].addEventListener('click' , function() {
  let buttonremove = remove[i] ;
  buttonremove.addEventListener('click' , function(event){
      let buttonclick = event.target 
-     buttonclick.parentElement.remove() 
+     buttonclick.parentElement.parentElement.remove() 
 
      price[i].innerHTML= 0 ;
 
-
-
+       calculsum() ;
  })
 }
